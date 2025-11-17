@@ -86,6 +86,10 @@ ignored_settings = {
     'worker_pool_putlocks',
 }
 
+html_static_path = ["_static"]
+html_js_files = [
+    'js/chat-widget.js',  # Your chatbot script
+]
 
 def configcheck_project_settings():
     from celery.app.defaults import NAMESPACES, flatten
